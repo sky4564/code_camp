@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>HTML과 연결</title>
+    <script>
+        function aaa(){
+            // alert('반갑습니다.')
+
+            document.getElementById("qqq").innerText = "반갑습니다."
+        }
+
+        function bbb(){
+            const number = Number(document.getElementById("zzz").innerText) // 0
+            document.getElementById("zzz").innerText = number + 1
+        }
+
+        function ccc(){
+            document.getElementById("xxx").setAttribute("disabled", true)
+        }
+
+        function fff(){
+            document.getElementById("ddd").style = "color: red"
+        }
+    </script>
+</head>
+<body>
+    <div id="qqq">안녕하세요</div>
+    <button onclick="aaa()">클릭하세요!</button>
+
+    <div id="zzz">0</div>
+    <button onclick="bbb()">올리기</button>
+
+    <button id="xxx" onclick="ccc()">비활성화 시키기</button>
+
+    <button id="ddd" onclick="fff()">색깔 바꾸기</button>
+</body>
+</html>
